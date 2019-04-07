@@ -2,6 +2,10 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bike</title>
     <style>
         /* Set the size of the div element that contains the map */
         #map {
@@ -25,7 +29,7 @@
         // Initialize and add the map
         function initMap() {
             // The location of Uluru
-            var uluru = { lat: 24.801815, lng: 120.971459};
+            var uluru = { lat: 24.801815, lng: 120.971459 };
             // The map, centered at Uluru
             var map = new google.maps.Map(
                 document.getElementById('map'), { zoom: 13, center: uluru });
@@ -48,10 +52,10 @@
 
                         var marker = new google.maps.Marker({
                             map: map,
-                            icon:"http://icons.iconarchive.com/icons/aha-soft/transport/32/bike-icon.png",
+                            icon: "http://icons.iconarchive.com/icons/aha-soft/transport/32/bike-icon.png",
                             position: myLatLngex,
                             title: response[i].站點位置
-                            
+
 
                         });
                     }
